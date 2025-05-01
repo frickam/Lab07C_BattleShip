@@ -1,5 +1,10 @@
-public class Main {
+import javax.swing.*;
+
+public class BattleshipGame {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        SwingUtilities.invokeLater(() -> {
+            GameUI gameUI = new GameUI();
+            gameUI.createAndShowGUI();
+        });
     }
 }
